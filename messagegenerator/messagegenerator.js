@@ -4,7 +4,14 @@ const frasesmodelo() {
                   "Tus sueños se cumplen con trabajo, no con culpa.",
                   "Que sea difícil no significa que sea imposible, que sea imposible no significa que vayas a rendirte.",
                   "Tu felicidad depende de la calidad de tus pensamientos"]
-};
+
 
 const randomNumber = getRandomNumber(1, lineas.lenght);
-const randondomPhrase = lineas[randomNumber - 1];
+const randomPhrase = lineas[randomNumber - 1];
+
+return `Número aleatorio: ${randomNumber}, Frase: "${randomPhrase}"`;
+}
+
+function getRandomNumber(min, max) {
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
