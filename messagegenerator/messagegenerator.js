@@ -7,3 +7,4 @@ const frasesmodelo() {
 };
 
 const randomNumber = getRandomNumber(1, lineas.lenght);
+const randondomPhrase = lineas[randomNumber - 1];
